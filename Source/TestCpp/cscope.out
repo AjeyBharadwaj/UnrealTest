@@ -1,0 +1,1535 @@
+cscope 15 $HOME/Documents/Unreal Projects/TestCpp/Source/TestCpp               0000009378
+	@Ball.cpp
+
+4 
+	~"B®l.h
+"
+
+5 
+	~"CompÚ’ts/Sph”eCompÚ’t.h
+"
+
+6 
+	~"CompÚ’ts/SticMeshCompÚ’t.h
+"
+
+7 
+	~"M©h/UÄ—lM©hUt™y.h
+"
+
+10 
+	gAB®l
+::
+	$AB®l
+()
+
+12 
+	`UE_LOG
+(
+LogTemp
+, 
+W¬nšg
+, 
+	`TEXT
+("In Constructor!!!"));
+
+15 
+Sph”eCompÚ’t
+ = 
+C»©eDeçuÉSubobjeù
+<
+USph”eCompÚ’t
+>(
+	`TEXT
+("RootComponent"));
+
+16 
+RoÙCompÚ’t
+ = 
+Sph”eCompÚ’t
+;
+
+17 
+Sph”eCompÚ’t
+->
+	`In™Sph”eRadius
+(10.0f);
+
+18 
+Sph”eCompÚ’t
+->
+OnCompÚ’tH™
+.
+	`AddDyÇmic
+(
+this
+, &
+AB®l
+::
+OnH™
+);
+
+22 
+Sph”eVisu®
+ = 
+C»©eDeçuÉSubobjeù
+<
+USticMeshCompÚ’t
+>(
+	`TEXT
+("VisualRepresentation"));
+
+23 
+Sph”eVisu®
+->
+	`S‘upA‰achm’t
+(
+RoÙCompÚ’t
+);
+
+24 
+CÚ¡ruùÜH–³rs
+::
+FObjeùFšd”
+<
+USticMesh
+> 
+	`Sph”eVisu®As£t
+(
+	`TEXT
+("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
+
+25 ià(
+Sph”eVisu®As£t
+.
+	`Sucûeded
+())
+
+27 
+	`UE_LOG
+(
+LogTemp
+, 
+W¬nšg
+, 
+	`TEXT
+("Setting Sphere‡s Static Mesh!!!"));
+
+28 
+Sph”eVisu®
+->
+	`S‘SticMesh
+(
+Sph”eVisu®As£t
+.
+Objeù
+);
+
+30 
+Sph”eVisu®
+->
+	`S‘WÜldSÿË3D
+(
+	`FVeùÜ
+(0.2f));
+
+35 
+Prim¬yAùÜTick
+.
+bCªEv”Tick
+ = 
+Œue
+;
+
+37 
+tickD–ay
+ = 
+FM©h
+::
+	`RªdRªge
+(
+tickD–ayMš
+, 
+tickD–ayMax
+);
+
+38 
+loÿtiÚInüem’t
+ = 
+FM©h
+::
+	`RªdRªge
+(
+loÿtiÚInüem’tMš
+, 
+loÿtiÚInüem’tMax
+);
+
+40 
+	}
+}
+
+42 
+	gAB®l
+::
+	$OnH™
+(
+UPrim™iveCompÚ’t
+* 
+H™Comp
+, 
+AAùÜ
+* 
+Oth”AùÜ
+, UPrim™iveCompÚ’t* 
+Oth”Comp
+, 
+FVeùÜ
+ 
+NÜm®Impul£
+, cÚ¡ 
+FH™ResuÉ
+& 
+H™
+) {
+
+43 
+	`UE_LOG
+(
+LogTemp
+, 
+W¬nšg
+, 
+	`TEXT
+("HIT!!!!"));
+
+44 
+	}
+}
+
+47 
+	gAB®l
+::
+	$BegšPÏy
+()
+
+49 
+Su³r
+::
+	`BegšPÏy
+();
+
+51 
+	}
+}
+
+54 
+	gAB®l
+::
+	$Tick
+(
+D–Time
+)
+
+56 
+Su³r
+::
+	`Tick
+(
+D–Time
+);
+
+57 
+tickCouÁ
+++;
+
+59 ià(
+tickCouÁ
+%
+tickD–ay
+ == 0) {
+
+60 
+tickCouÁ
+ = 0;
+
+63 
+FVeùÜ
+ 
+‹mp
+ = 
+Sph”eVisu®
+->
+	`G‘R–©iveLoÿtiÚ
+();
+
+65 
+dœeùiÚChªgeTick
+++;
+
+66 ià(
+dœeùiÚChªgeTick
+%
+dœeùiÚD–ay
+ == 0) {
+
+67 
+dœeùiÚChªgeTick
+ = 0;
+
+68 
+dœeùiÚ
+++;
+
+70 ià(
+dœeùiÚ
+ == 4) {
+
+71 
+dœeùiÚ
+ = 0;
+
+76 
+dœeùiÚ
+) {
+
+78 
+‹mp
+ +ğ
+	`FVeùÜ
+(-
+loÿtiÚInüem’t
+, 0, 0);
+
+81 
+‹mp
+ +ğ
+	`FVeùÜ
+(0, -
+loÿtiÚInüem’t
+, 0);
+
+84 
+‹mp
+ +ğ
+	`FVeùÜ
+(
+loÿtiÚInüem’t
+, 0, 0);
+
+87 
+‹mp
+ +ğ
+	`FVeùÜ
+(0, 
+loÿtiÚInüem’t
+, 0);
+
+92 
+Sph”eVisu®
+->
+	`S‘R–©iveLoÿtiÚ
+(
+‹mp
+);
+
+93 
+tickCouÁ
+ = 0;
+
+97 
+	}
+}
+
+	@Ball.h
+
+3 #´agm¨
+Úû
+
+
+5 
+	~"CÜeMšim®.h
+"
+
+6 
+	~"GameF¿mewÜk/AùÜ.h
+"
+
+7 
+	~"B®l.g’”©ed.h
+"
+
+9 
+şass
+ 
+	gUSph”eCompÚ’t
+;
+
+10 
+şass
+ 
+	gUSticMeshCompÚ’t
+;
+
+12 
+	$UCLASS
+()
+
+13 şas 
+	cTESTCPP_API
+ 
+AB®l
+ : 
+public
+ 
+AAùÜ
+
+
+15 
+	$GENERATED_BODY
+()
+
+17 
+public
+:
+
+19 
+	`AB®l
+();
+
+21 
+´Ùeùed
+:
+
+23 
+vœtu®
+ 
+	$BegšPÏy
+(è
+ov”ride
+;
+
+25 
+public
+:
+
+27 
+vœtu®
+ 
+	$Tick
+(
+D–Time
+è
+ov”ride
+;
+
+29 
+USph”eCompÚ’t
+* 
+Sph”eCompÚ’t
+;
+
+30 
+USticMeshCompÚ’t
+* 
+Sph”eVisu®
+;
+
+32 
+	$UFUNCTION
+()
+
+33 
+	`OnH™
+(
+UPrim™iveCompÚ’t
+* 
+H™Comp
+, 
+AAùÜ
+* 
+Oth”AùÜ
+, UPrim™iveCompÚ’t* 
+Oth”Comp
+, 
+FVeùÜ
+ 
+NÜm®Impul£
+, cÚ¡ 
+FH™ResuÉ
+& 
+H™
+);
+
+35 
+´iv©e
+:
+
+36 
+tickD–ayMš
+ = 1;
+
+37 
+tickD–ayMax
+ = 5;
+
+38 
+tickD–ay
+ = 1;
+
+40 
+tickCouÁ
+ = 0;
+
+41 
+dœeùiÚ
+ = 0;
+
+42 
+dœeùiÚD–ay
+ = 50;
+
+43 
+dœeùiÚChªgeTick
+ = 0;
+
+45 
+loÿtiÚInüem’t
+ = 10;
+
+46 
+loÿtiÚInüem’tMš
+ = 1;
+
+47 
+loÿtiÚInüem’tMax
+ = 10;
+
+	@TestCpp.cpp
+
+3 
+	~"Te¡Cµ.h
+"
+
+4 
+	~"ModuËs/ModuËMªag”.h
+"
+
+6 
+IMPLEMENT_PRIMARY_GAME_MODULE
+Ğ
+FDeçuÉGameModuËIm¶
+, 
+Te¡Cµ
+, "TestCpp" );
+
+	@TestCpp.h
+
+3 #´agm¨
+Úû
+
+
+5 
+	~"CÜeMšim®.h
+"
+
+	@TestCppCharacter.cpp
+
+3 
+	~"Te¡CµCh¬aù”.h
+"
+
+4 
+	~"H—dMouÁedDi¥ÏyFunùiÚLib¿ry.h
+"
+
+5 
+	~"Cam”a/Cam”aCompÚ’t.h
+"
+
+6 
+	~"CompÚ’ts/C­suËCompÚ’t.h
+"
+
+7 
+	~"CompÚ’ts/IÅutCompÚ’t.h
+"
+
+8 
+	~"GameF¿mewÜk/Ch¬aù”Movem’tCompÚ’t.h
+"
+
+9 
+	~"GameF¿mewÜk/CÚŒŞËr.h
+"
+
+10 
+	~"GameF¿mewÜk/S´šgArmCompÚ’t.h
+"
+
+12 
+	~"B®l.h
+"
+
+17 
+	gATe¡CµCh¬aù”
+::
+	$ATe¡CµCh¬aù”
+()
+
+20 
+	`G‘C­suËCompÚ’t
+()->
+	`In™C­suËSize
+(42.f, 96.0f);
+
+23 
+Ba£TuºR©e
+ = 45.f;
+
+24 
+Ba£LookUpR©e
+ = 45.f;
+
+27 
+bU£CÚŒŞËrRÙ©iÚP™ch
+ = 
+çl£
+;
+
+28 
+bU£CÚŒŞËrRÙ©iÚYaw
+ = 
+çl£
+;
+
+29 
+bU£CÚŒŞËrRÙ©iÚRŞl
+ = 
+çl£
+;
+
+32 
+	`G‘Ch¬aù”Movem’t
+()->
+bOr›ÁRÙ©iÚToMovem’t
+ = 
+Œue
+;
+
+33 
+	`G‘Ch¬aù”Movem’t
+()->
+RÙ©iÚR©e
+ = 
+	`FRÙ©Ü
+(0.0f, 540.0f, 0.0f);
+
+34 
+	`G‘Ch¬aù”Movem’t
+()->
+JumpZV–oc™y
+ = 600.f;
+
+35 
+	`G‘Ch¬aù”Movem’t
+()->
+AœCÚŒŞ
+ = 0.2f;
+
+38 
+Cam”aBoom
+ = 
+C»©eDeçuÉSubobjeù
+<
+US´šgArmCompÚ’t
+>(
+	`TEXT
+("CameraBoom"));
+
+39 
+Cam”aBoom
+->
+	`S‘upA‰achm’t
+(
+RoÙCompÚ’t
+);
+
+40 
+Cam”aBoom
+->
+T¬g‘ArmL’gth
+ = 300.0f;
+
+41 
+Cam”aBoom
+->
+bU£PawnCÚŒŞRÙ©iÚ
+ = 
+Œue
+;
+
+44 
+FŞlowCam”a
+ = 
+C»©eDeçuÉSubobjeù
+<
+UCam”aCompÚ’t
+>(
+	`TEXT
+("FollowCamera"));
+
+45 
+FŞlowCam”a
+->
+	`S‘upA‰achm’t
+(
+Cam”aBoom
+, 
+US´šgArmCompÚ’t
+::
+Sock‘Name
+);
+
+46 
+FŞlowCam”a
+->
+bU£PawnCÚŒŞRÙ©iÚ
+ = 
+çl£
+;
+
+50 
+	}
+}
+
+55 
+	gATe¡CµCh¬aù”
+::
+	$S‘upPÏy”IÅutCompÚ’t
+(
+şass
+ 
+UIÅutCompÚ’t
+* 
+PÏy”IÅutCompÚ’t
+)
+
+58 
+	`check
+(
+PÏy”IÅutCompÚ’t
+);
+
+59 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAùiÚ
+("Jump", 
+IE_P»s£d
+, 
+this
+, &
+ATe¡CµCh¬aù”
+::
+Jump
+);
+
+60 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAùiÚ
+("Jump", 
+IE_R–—£d
+, 
+this
+, &
+ACh¬aù”
+::
+StİJumpšg
+);
+
+62 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAxis
+("MoveFÜw¬d", 
+this
+, &
+ATe¡CµCh¬aù”
+::
+MoveFÜw¬d
+);
+
+63 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAxis
+("MoveRight", 
+this
+, &
+ATe¡CµCh¬aù”
+::
+MoveRight
+);
+
+68 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAxis
+("Tuº", 
+this
+, &
+APawn
+::
+AddCÚŒŞËrYawIÅut
+);
+
+69 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAxis
+("TuºR©e", 
+this
+, &
+ATe¡CµCh¬aù”
+::
+TuºAtR©e
+);
+
+70 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAxis
+("LookUp", 
+this
+, &
+APawn
+::
+AddCÚŒŞËrP™chIÅut
+);
+
+71 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAxis
+("LookUpR©e", 
+this
+, &
+ATe¡CµCh¬aù”
+::
+LookUpAtR©e
+);
+
+74 
+PÏy”IÅutCompÚ’t
+->
+	`BšdTouch
+(
+IE_P»s£d
+, 
+this
+, &
+ATe¡CµCh¬aù”
+::
+TouchS¹ed
+);
+
+75 
+PÏy”IÅutCompÚ’t
+->
+	`BšdTouch
+(
+IE_R–—£d
+, 
+this
+, &
+ATe¡CµCh¬aù”
+::
+TouchStİ³d
+);
+
+78 
+PÏy”IÅutCompÚ’t
+->
+	`BšdAùiÚ
+("Re£tVR", 
+IE_P»s£d
+, 
+this
+, &
+ATe¡CµCh¬aù”
+::
+OnRe£tVR
+);
+
+79 
+	}
+}
+
+82 
+	gATe¡CµCh¬aù”
+::
+	$OnRe£tVR
+()
+
+90 
+UH—dMouÁedDi¥ÏyFunùiÚLib¿ry
+::
+	`Re£tOr›Á©iÚAndPos™iÚ
+();
+
+91 
+	}
+}
+
+93 
+	gATe¡CµCh¬aù”
+::
+	$TouchS¹ed
+(
+ETouchIndex
+::
+Ty³
+ 
+Fšg”Index
+, 
+FVeùÜ
+ 
+LoÿtiÚ
+)
+
+95 
+	`Jump
+();
+
+96 
+	}
+}
+
+98 
+	gATe¡CµCh¬aù”
+::
+	$TouchStİ³d
+(
+ETouchIndex
+::
+Ty³
+ 
+Fšg”Index
+, 
+FVeùÜ
+ 
+LoÿtiÚ
+)
+
+100 
+	`StİJumpšg
+();
+
+101 
+	}
+}
+
+103 
+	gATe¡CµCh¬aù”
+::
+	$TuºAtR©e
+(
+R©e
+)
+
+106 
+	`AddCÚŒŞËrYawIÅut
+(
+R©e
+ * 
+Ba£TuºR©e
+ * 
+	`G‘WÜld
+()->
+	`G‘D–SecÚds
+());
+
+107 
+	}
+}
+
+109 
+	gATe¡CµCh¬aù”
+::
+	$LookUpAtR©e
+(
+R©e
+)
+
+112 
+	`AddCÚŒŞËrP™chIÅut
+(
+R©e
+ * 
+Ba£LookUpR©e
+ * 
+	`G‘WÜld
+()->
+	`G‘D–SecÚds
+());
+
+113 
+	}
+}
+
+115 
+	gATe¡CµCh¬aù”
+::
+	$MoveFÜw¬d
+(
+V®ue
+)
+
+117 ià((
+CÚŒŞËr
+ !ğ
+nuÎ±r
+è&& (
+V®ue
+ != 0.0f))
+
+120 cÚ¡ 
+FRÙ©Ü
+ 
+RÙ©iÚ
+ = 
+CÚŒŞËr
+->
+	`G‘CÚŒŞRÙ©iÚ
+();
+
+121 cÚ¡ 
+FRÙ©Ü
+ 
+	`YawRÙ©iÚ
+(0, 
+RÙ©iÚ
+.
+Yaw
+, 0);
+
+124 cÚ¡ 
+FVeùÜ
+ 
+DœeùiÚ
+ = 
+	`FRÙ©iÚM©rix
+(
+YawRÙ©iÚ
+).
+	`G‘Un™Axis
+(
+EAxis
+::
+X
+);
+
+125 
+	`AddMovem’tIÅut
+(
+DœeùiÚ
+, 
+V®ue
+);
+
+127 
+	}
+}
+
+129 
+	gATe¡CµCh¬aù”
+::
+	$Jump
+() {
+
+130 
+	`UE_LOG
+(
+LogTemp
+, 
+W¬nšg
+, 
+	`TEXT
+("Jumping!!!"));
+
+131 
+FVeùÜ
+ 
+	`LoÿtiÚ
+(-770.0f, 80.0f, 130.0f);
+
+132 
+FRÙ©Ü
+ 
+	`RÙ©iÚ
+(0, 0, 0);
+
+133 
+FAùÜS·wnP¬am‘”s
+ 
+AùÜS·wnP¬ams
+;
+
+134 
+AùÜS·wnP¬ams
+.
+S·wnCŞlisiÚHªdlšgOv”ride
+ = 
+ES·wnAùÜCŞlisiÚHªdlšgM‘hod
+::
+AlwaysS·wn
+;
+
+136 
+	`G‘WÜld
+()->
+S·wnAùÜ
+<
+AB®l
+>(
+LoÿtiÚ
+, 
+RÙ©iÚ
+, 
+AùÜS·wnP¬ams
+);
+
+138 
+	`UE_LOG
+(
+LogTemp
+, 
+W¬nšg
+, 
+	`TEXT
+("Created Actor!!!"));
+
+139 
+ACh¬aù”
+::
+	`Jump
+();
+
+140 
+	}
+}
+
+143 
+	gATe¡CµCh¬aù”
+::
+	$MoveRight
+(
+V®ue
+)
+
+145 iàĞ(
+CÚŒŞËr
+ !ğ
+nuÎ±r
+è&& (
+V®ue
+ != 0.0f) )
+
+148 cÚ¡ 
+FRÙ©Ü
+ 
+RÙ©iÚ
+ = 
+CÚŒŞËr
+->
+	`G‘CÚŒŞRÙ©iÚ
+();
+
+149 cÚ¡ 
+FRÙ©Ü
+ 
+	`YawRÙ©iÚ
+(0, 
+RÙ©iÚ
+.
+Yaw
+, 0);
+
+152 cÚ¡ 
+FVeùÜ
+ 
+DœeùiÚ
+ = 
+	`FRÙ©iÚM©rix
+(
+YawRÙ©iÚ
+).
+	`G‘Un™Axis
+(
+EAxis
+::
+Y
+);
+
+154 
+	`AddMovem’tIÅut
+(
+DœeùiÚ
+, 
+V®ue
+);
+
+156 
+	}
+}
+
+	@TestCppCharacter.h
+
+3 #´agm¨
+Úû
+
+
+5 
+	~"CÜeMšim®.h
+"
+
+6 
+	~"GameF¿mewÜk/Ch¬aù”.h
+"
+
+7 
+	~"Te¡CµCh¬aù”.g’”©ed.h
+"
+
+9 
+	$UCLASS
+(
+cÚfig
+=
+Game
+)
+
+10 şas 
+	cATe¡CµCh¬aù”
+ : 
+public
+ 
+ACh¬aù”
+
+
+12 
+	$GENERATED_BODY
+()
+
+15 
+	`UPROPERTY
+(
+VisibËAnywh”e
+, 
+Blu•rštR—dOÆy
+, 
+C©egÜy
+ = 
+Cam”a
+, 
+m‘a
+ = (
+AÎowPriv©eAcûss
+ = "true"))
+
+16 
+şass
+ 
+US´šgArmCompÚ’t
+* 
+Cam”aBoom
+;
+
+19 
+	`UPROPERTY
+(
+VisibËAnywh”e
+, 
+Blu•rštR—dOÆy
+, 
+C©egÜy
+ = 
+Cam”a
+, 
+m‘a
+ = (
+AÎowPriv©eAcûss
+ = "true"))
+
+20 
+şass
+ 
+UCam”aCompÚ’t
+* 
+FŞlowCam”a
+;
+
+21 
+public
+:
+
+22 
+	`ATe¡CµCh¬aù”
+();
+
+25 
+	$UPROPERTY
+(
+VisibËAnywh”e
+, 
+Blu•rštR—dOÆy
+, 
+C©egÜy
+=
+Cam”a
+)
+
+26 
+Ba£TuºR©e
+;
+
+29 
+	$UPROPERTY
+(
+VisibËAnywh”e
+, 
+Blu•rštR—dOÆy
+, 
+C©egÜy
+=
+Cam”a
+)
+
+30 
+Ba£LookUpR©e
+;
+
+32 
+´Ùeùed
+:
+
+35 
+	`OnRe£tVR
+();
+
+38 
+	`MoveFÜw¬d
+(
+V®ue
+);
+
+41 
+	`MoveRight
+(
+V®ue
+);
+
+43 
+	`Jump
+();
+
+49 
+	`TuºAtR©e
+(
+R©e
+);
+
+55 
+	`LookUpAtR©e
+(
+R©e
+);
+
+58 
+	`TouchS¹ed
+(
+ETouchIndex
+::
+Ty³
+ 
+Fšg”Index
+, 
+FVeùÜ
+ 
+LoÿtiÚ
+);
+
+61 
+	`TouchStİ³d
+(
+ETouchIndex
+::
+Ty³
+ 
+Fšg”Index
+, 
+FVeùÜ
+ 
+LoÿtiÚ
+);
+
+63 
+´Ùeùed
+:
+
+65 
+vœtu®
+ 
+	$S‘upPÏy”IÅutCompÚ’t
+(
+şass
+ 
+UIÅutCompÚ’t
+* 
+PÏy”IÅutCompÚ’t
+è
+ov”ride
+;
+
+68 
+public
+:
+
+70 
+FORCEINLINE
+ 
+şass
+ 
+US´šgArmCompÚ’t
+* 
+	$G‘Cam”aBoom
+(ècÚ¡ {  
+Cam”aBoom
+; }
+
+72 
+FORCEINLINE
+ 
+şass
+ 
+UCam”aCompÚ’t
+* 
+	$G‘FŞlowCam”a
+(ècÚ¡ {  
+FŞlowCam”a
+; 
+	}
+}
+
+	@TestCppGameMode.cpp
+
+3 
+	~"Te¡CµGameMode.h
+"
+
+4 
+	~"Te¡CµCh¬aù”.h
+"
+
+5 
+	~"UObjeù/CÚ¡ruùÜH–³rs.h
+"
+
+7 
+	gATe¡CµGameMode
+::
+	$ATe¡CµGameMode
+()
+
+10 
+CÚ¡ruùÜH–³rs
+::
+FCÏssFšd”
+<
+APawn
+> 
+	`PÏy”PawnBPCÏss
+(
+	`TEXT
+("/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter"));
+
+11 ià(
+PÏy”PawnBPCÏss
+.
+CÏss
+ !ğ
+NULL
+)
+
+13 
+DeçuÉPawnCÏss
+ = 
+PÏy”PawnBPCÏss
+.
+CÏss
+;
+
+15 
+	}
+}
+
+	@TestCppGameMode.h
+
+3 #´agm¨
+Úû
+
+
+5 
+	~"CÜeMšim®.h
+"
+
+6 
+	~"GameF¿mewÜk/GameModeBa£.h
+"
+
+7 
+	~"Te¡CµGameMode.g’”©ed.h
+"
+
+9 
+	$UCLASS
+(
+mšim®­i
+)
+
+10 şas 
+	cATe¡CµGameMode
+ : 
+public
+ 
+AGameModeBa£
+
+
+12 
+	$GENERATED_BODY
+()
+
+14 
+public
+:
+
+15 
+	`ATe¡CµGameMode
+();
+
+	@
+1
+.
+0
+8
+116
+Ball.cpp
+Ball.h
+TestCpp.cpp
+TestCpp.h
+TestCppCharacter.cpp
+TestCppCharacter.h
+TestCppGameMode.cpp
+TestCppGameMode.h
